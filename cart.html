@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Geek Hub Store</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#anchor">Produtos</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="login-carrinho">
+                <div class="login">
+                    <img src="img/icone.png" alt="Login Icon">
+                    <a href="login.html"><h3>LOGIN</h3></a>
+                </div>
+                <div class="carrinho">
+                    <a href="cart.html"><img src="img/carrinho.png" alt="Carrinho"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items" id="cart-items">
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="img/camisetaLuffy.jpg" alt="Produto 1">
+                        <div class="item-info">
+                            <p>Camiseta do Luffy</p>
+                            <p>Quantidade: 1</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p>Preço: R$ 50.00</p>
+                        <p>Desconto: R$ 0.00</p>
+                        <p>Preço com desconto: R$ 50.00</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-details">
+                        <div class="kratos">
+                        <img src="img/caneca rick.png" alt="Produto 2">
+                    </div>
+                        <div class="item-info">
+                            <p>Caneca do Rick</p>
+                            <p>Quantidade: 1</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p>Preço: R$ 30.00</p>
+                        <p>Desconto: R$ 0.00</p>
+                        <p>Preço com desconto: R$ 30.00</p>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="img/snorlax.png" alt="Produto 3">
+                        <div class="item-info">
+                            <p>Almofada Snorlax</p>
+                            <p>Quantidade: 1</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p>Preço: R$ 40.00</p>
+                        <p>Desconto: R$ 0.00</p>
+                        <p>Preço com desconto: R$ 40.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <h3>Resumo do Carrinho</h3>
+                <p>Total dos Produtos: R$ <span id="total-produtos">120.00</span></p>
+                <p>Frete: R$ <span id="frete">10.00</span></p>
+                <p>Total com Frete: R$ <span id="total-com-frete">130.00</span></p>
+                <div class="discount-code">
+                    <input type="text" id="cupom" placeholder="Código do Cupom">
+                    <button onclick="aplicarCupom()">Aplicar Cupom</button>
+                </div>
+                <button onclick="finalizarCompra()">Finalizar Compra</button>
+                <div id="mensagem-finalizacao" style="display: none; margin-top: 20px;">
+                    <p style="color: black;">Compra finalizada! Obrigado por comprar conosco!</p>
+                </div>
+                <div class="shipping-calculator">
+                    <h3>Calculador de Frete</h3>
+                    <input type="text" id="cep" placeholder="CEP">
+                    <button onclick="calcularfrete()">Calcular</button>
+                    <div id="mensagem-frete" style="display: none; margin-bottom: 20px;">
+                        <pre style="color: black; font-size: 15px;">R$10,00 |  3 dias úteis</pre>
+                    </div>
+                    <p>Compras acima de R$ 200 têm frete grátis.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Geek Hub Store. Todos os direitos reservados.</p>
+        <p>Email para contato: contact@geekhubstore.com</p>
+        <p>Siga-nos em nossas redes sociais:</p>
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/">
+                    <img src="img/facebook.svg" alt="Facebook" height="30px">
+                </a></li>
+            <li><a target="_blank" href="https://www.instagram.com/">
+                    <img src="img/instagram.svg" alt="Instagram" height="30px">
+                </a></li>
+            <li><a target="_blank" href="https://x.com/?lang=pt-br">
+                    <img src="img/twitter-x.svg" alt="Twitter" height="30px">
+                </a></li>
+        </ul>
+    </footer>
+    <script>
+        function finalizarCompra() {
+            var mensagemFinalizacao = document.getElementById("mensagem-finalizacao");
+            mensagemFinalizacao.style.display = "block";
+        }
+
+        function calcularfrete() {
+            var mensagemfrete = document.getElementById('mensagem-frete');
+            mensagemfrete.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>

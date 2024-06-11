@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Geek Hub Store</title>
+    <link rel="stylesheet" href="product1.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#anchor">Produtos</a></li>
+                    <li><a href="about.html">Sobre nós</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="login-carrinho">
+                <div class="login">
+                    <img src="img/icone.png" alt="Login Icon">
+                    <a href="login.html"><h3>LOGIN</h3></a>
+                </div>
+                <div class="carrinho">
+                    <a href="cart.html"><img src="img/carrinho.png" alt="Carrinho"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product-info">
+                <div class="image-box">
+                    <img src="img/camisetaLuffy.jpg" alt="Camiseta One Piece Monkey D. Luffy">
+                </div>
+                <div class="product-details">
+                    <h2>Camiseta One Piece Monkey D. Luffy</h2>
+                    <p class="price">R$ 29,99</p>
+                    <button class="add-to-cart" onclick="adicionarProduto('Camiseta One Piece Monkey D. Luffy', 29.99)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="description">
+                <p>Camiseta do personagem Monkey D. Luffy, do anime One Piece de altíssima qualidade esperando por você!</p>
+                <p>Informações técnicas:</p>
+                <ul>
+                    <li>Camiseta 100% algodão</li>
+                    <li>Malha confort premium, com algodão penteado 30.1</li>
+                    <li>Estampa feita através de silk screen</li>
+                </ul>
+                <p>Tabela de Medidas:</p>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Altura</th>
+                        <th>Largura</th>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>67cm</td>
+                        <td>48cm</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>70cm</td>
+                        <td>50cm</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>72cm</td>
+                        <td>53cm</td>
+                    </tr>
+                    <tr>
+                        <td>GG</td>
+                        <td>74cm</td>
+                        <td>55cm</td>
+                    </tr>
+                    <tr>
+                        <td>XG</td>
+                        <td>76cm</td>
+                        <td>57cm</td>
+                    </tr>
+                    <tr>
+                        <td>XXG</td>
+                        <td>78cm</td>
+                        <td>59cm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Geek Hub Store. Todos os direitos reservados.</p>
+        <p>Email para contato: contact@geekhubstore.com</p>
+        <p>Siga-nos em nossas redes sociais:</p>
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/">
+                <img src="img/facebook.svg" alt="Facebook" height="30px">
+            </a></li>
+            <li><a target="_blank" href="https://www.instagram.com/">
+                <img src="img/instagram.svg" alt="Instagram" height="30px">
+            </a></li>
+            <li><a target="_blank" href="https://x.com/?lang=pt-br">
+                <img src="img/twitter-x.svg" alt="Twitter" height="30px">
+            </a></li>
+        </ul>
+    </footer>
+    <script>
+        function adicionarProduto() {
+            window.location.href = "cart.html";
+        }
+    </script>
+</body>
+</html>
