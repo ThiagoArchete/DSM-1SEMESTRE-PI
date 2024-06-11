@@ -22,3 +22,5 @@ A Geek Hub Store foi criada com o objetivo de oferecer uma experiência de compr
 - **Formulário de Contato e Sobre nós**: Seção de contato e informações sobre a loja e nossa meta no mercado.
 
 [Link Ativo do Site](https://dsm-1-semestre-pi.vercel.app/).
+
+[Vídeo no YouTube demonstrativo do projeto.](https://youtu.be/m0aJ2JC9xl8).
