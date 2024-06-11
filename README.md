@@ -20,3 +20,5 @@ A Geek Hub Store foi criada com o objetivo de oferecer uma experiência de compr
 - **Detalhes do Produto**: Mostra informações detalhadas sobre um produto específico.
 - **Carrinho de Compras**: Permite aos usuários adicionar produtos ao carrinho e visualizar o resumo da compra.
 - **Formulário de Contato e Sobre nós**: Seção de contato e informações sobre a loja e nossa meta no mercado.
+
+[Link do Site hospedado na Web](dsm-1-semestre-pi.vercel.app)
